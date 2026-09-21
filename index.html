@@ -9,6 +9,7 @@
 
     <meta name="description"
         content="Portfolio of Vaishali Paripelly, a Computer Science Engineering student interested in software development and technology.">
+        <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -32,36 +33,51 @@
     <main>
 
         <section id="home">
-            <h1>Hello, I'm Vaishali Paripelly</h1>
+             <div class="home-content">
+        <p class="welcome-text">WELCOME TO MY PORTFOLIO</p>
 
-            <h2>B.Tech Computer Science Engineering Student</h2>
+        <h1>Hi, I'm <span>Vaishali Paripelly</span></h1>
 
-            <p>
-                I am passionate about programming, problem solving,
-                and learning new technologies.
-            </p>
+        <h2>B.Tech Computer Science & Engineering Student</h2>
 
+        <p class="home-description">
+            I am a 3rd-year CSE student passionate about software development,
+            programming, and problem-solving. I am continuously building my
+            technical skills and exploring new technologies.
+        </p>
+
+        <div class="home-buttons">
             <a href="#projects">View My Project</a>
-        </section>
-
+            <a href="resume.pdf" download="resume.pdf">Download Resume</a>
+        </div>
+    </div>
+</section>
 
         <!-- About Section -->
         <section id="about">
-            <h2>About Me</h2>
+    <h2>About Me</h2>
 
-            <p>
-                I am a B.Tech Computer Science Engineering student
-                at JNTUH College of Engineering Jagtial.
-                I am interested in software development and
-                continuously improving my technical skills.
-            </p>
+    <p>
+        I am a 3rd-year B.Tech Computer Science and Engineering student
+        at JNTUH UniversityCollege of Engineering Jagtial.
+    </p>
 
-            <p>
-                My goal is to become a skilled software developer
-                by strengthening my programming and problem-solving
-                skills and building real-world projects.
-            </p>
-        </section>
+    <p>
+        I have a foundation in C Programming, Embedded C, Java, Python,
+        HTML, CSS, SQL, and Data Structures.
+    </p>
+
+    <p>
+        I am interested in software development and problem-solving.
+        Currently, I am strengthening my programming skills through
+        regular practice, projects, and hands-on learning.
+    </p>
+
+    <p>
+        My goal is to become a skilled software developer by building
+        real-world projects and continuously learning new technologies.
+    </p>
+</section>
 
 
         <!-- Skills Section -->
@@ -70,7 +86,8 @@
 
             <ul>
                 <li>C Programming</li>
-                <li>Java</li>
+                 <li>Embedded C</li>
+                 <li>Java</li>
                 <li>Python</li>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -85,63 +102,91 @@
             <h2>My Project</h2>
 
             <article>
-                <h3>Smart Street Light System with Flood Detection</h3>
+        <h3>Smart Street Light System with Flood Detection</h3>
 
-                <p>
-                    Academic Mini Project
-                </p>
+        <p class="project-type">Academic Mini Project</p>
 
-                <p>
-                    A smart street light system designed to control
-                    street lights based on surrounding light conditions
-                    and detect rising water levels to provide an alert.
-                </p>
+        <p>
+            A smart street light system designed to automatically
+            control street lights based on surrounding light
+            conditions and detect rising water levels to provide
+            an alert during flood conditions.
+        </p>
 
-                <p>
-                    Technologies and components:
-                    Arduino, LDR sensor, IR sensor,
-                    Water Level Sensor, LED and Buzzer.
-                </p>
-            </article>
+        <p>
+            <strong>Technologies & Components:</strong>
+           Embedded C, Arduino, LDR Sensor, IR Sensor, Water Level Sensor,
+            LED and Buzzer.
+        </p>
+    </article>
         </section>
 
 
         <!-- Education Section -->
         <section id="education">
-            <h2>Education</h2>
+    <h2>Education</h2>
 
-            <h3>B.Tech - Computer Science Engineering</h3>
+    <article>
+        <h3>B.Tech - Computer Science and Engineering</h3>
 
-            <p>
-                JNTUH College of Engineering Jagtial
-            </p>
+        <p><strong>JNTUH UniversityCollege of Engineering Jagtial</strong></p>
 
-            <p>
-                3rd Year | 5th Semester
-            </p>
-        </section>
+        <p>3rd Year | 5th Semester</p>
+
+        <p>
+            Currently pursuing my Bachelor's degree in Computer Science
+            and Engineering with a focus on programming, software
+            development, and problem-solving.
+        </p>
+    </article>
+</section>
 
 
         <!-- Contact Section -->
         <section id="contact">
-            <h2>Contact Me</h2>
+            <h2>Contact Me</h2><section id="contact">
 
-            <p>Email: vaishaliparipelly@gmail.com</p>
+    <h2>Contact Me</h2>
 
-            <p>
-                GitHub:
-                <a href="https://github.com/vaishaliparipelly" target="_blank">
-                    github.com/vaishaliparipelly
-                </a>
-            </p>
+        <form id="contactForm" action="https://formspree.io/f/meaogqog" method="POST">
 
-            <p>
-                LinkedIn:
-               <a href="https://www.linkedin.com/in/vaishali-paripelly-668b93364" target="_blank">
-    LinkedIn
-</a>
-            </p>
-        </section>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5"
+            placeholder="Enter your message"></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+    <p>
+        📧 Email:
+        <a href="mailto:vaishaliparipelly@gmail.com">
+            vaishaliparipelly@gmail.com
+        </a>
+    </p>
+
+    <p>
+        🔗 GitHub:
+        <a href="https://github.com/vaishaliparipelly" target="_blank">
+            vaishaliparipelly
+        </a>
+    </p>
+
+    <p>
+        🔗 LinkedIn:
+        <a href="https://www.linkedin.com/in/vaishali-paripelly-668b93364"
+            target="_blank">
+            Vaishali Paripelly
+        </a>
+    </p>
+
+</section>
 
     </main>
 
@@ -150,7 +195,7 @@
     <footer>
         <p>© 2026 Vaishali Paripelly. All Rights Reserved.</p>
     </footer>
-
+<script src="script.js"></script>
 </body>
 
 </html>
